@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "static")));
 
 
-let links = ["ved"];
+// let links = ["ved"];
 app.get("/", (req, res) => {
     shortURL.find({}, (err, docs) => {
         if (!err) {
